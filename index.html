@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal portfolio website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/ea77adab0d.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logo.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Software Engineer</p>
+                <h1>Hi, I'm <span>Sandeep Kumar</span><br>from Ambedkar Nagar<br>(UTTAR PRADESH)</h1>
+            </div>
+        </div>
+    </div>
+    <!-- --------------about------- ----------------->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/user.png">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About me</h1>
+                    <p>BTech graduate, looking for a software engineer role with strong command in Java, HTML,CSS,javascript, Python etc.  Excellent communication skills and ability to understand client requirements. Currently looking for an opportunity to utilize my
+                        Technical skills in a challenging working environment and become a valuable asset to the organization </p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul> 
+                            <li><span>Web Development</span><br>Web app Development</li>
+                            <li><span>App Development</span><br>Building Android/iOS apps</li>
+                            <li><span>MS Office</span><br>Basic of Microsoft Office</li>
+                            <li><span>CATIA Design</span><br>Machenical 3d design Software</li>
+                            <li><span>Molding Design</span><br>Machenical real Design</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>june,2022-Current</span><br>Full Stack Developer Training at Newton School</li>
+                            <li><span>Oct,2021-Dec,2021</span><br>Eurocoustic Products Limited</li>
+                            <li><span>june,2021-August,2021</span><br>Dish TV</li>
+                            <li><span>2018 - 2020</span><br>Easyfuture Biznate india pvt. ltd.</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2021</span><br>BTech from NIT Durgapur</li>
+                            <li><span>2017</span><br>HSC from Jawahar Navodaya Vidyalaya Kottyam (KERALA)</li>
+                            <li><span>2015</span><br>SSC from Jawahar Navodaya Vidyalaya Ambedkar Nagar (UTTAR PRADESH)</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- -------------services------------>
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Design</h2>
+                    <p>1.Project on online food Shopping<br>
+                       2.Project on wall Clock<br>
+                       3.Project on </p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-sharp fa-solid fa-crop"></i>
+                    <h2>CATIA</h2>
+                    <p>CATIA is an acronym for Computer Aided Three-dimensional Interactive Application. It is one of the leading 3D software used by organizations in multiple industries ranging from aerospace, automobile to consumer products.
+                    </p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-app-store-ios"></i>
+                    <h2>Epl Ltd</h2>
+                    <p>Quality engineers review established processes in order to find manufacturing and cost optimizations. When problems arise, they conduct root cause investigations and develop and implement corrective or preventative action plans.</p>
+                    <a href="#">Learn more</a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- -------------portfolio------------- -->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/work-1.png">
+                    <div class="layer">
+                        <h3>Online Food Project</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia dolore reiciendis nemo
+                            nobis voluptate sint, delectus quos perspiciatis ad illo!</p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-2.png">
+                    <div class="layer">
+                        <h3>Wall Clock Project</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia dolore reiciendis nemo
+                            nobis voluptate sint, delectus quos perspiciatis ad illo!</p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-3.png">
+                    <div class="layer">
+                        <h3>Gym Form </h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia dolore reiciendis nemo
+                            nobis voluptate sint, delectus quos perspiciatis ad illo!</p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See more</a>
+        </div>
+    </div>
+    <!-- -------------------contact--------------- -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p> <i class="fa-sharp fa-solid fa-paper-plane"></i>mahisandeep786@gmail.com</p>
+                    <p> <i class="fa-solid fa-phone-volume"></i>9140982654</p>
+                    <div class="social-icons">
+                        <a href="https://facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+                        <a href=""><i class="fa-brands fa-twitter-square"></i></a>
+                        <a href=""><i class="fa-brands fa-instagram"></i></a>
+                        <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                    <a href="images/Sandeep_T.pdf" download class=" btn btn2">Downlode CV</a>
+                </div>
+                <div class="contact-right">
+                    <form>
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+
+                </div>
+
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright © sandy. Made with<i class="fa-sharp fa-solid fa-heart"></i> by Sandeep</p>
+        </div>
+    </div>
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link")
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+    <script>
+        var sidemeu=document.getElementById("sidemenu");
+        function openmenu(){
+            sidemeu.style.right="0";
+        }
+        function closemenu(){
+            sidemeu.style.right="-200px";
+        }
+    </script>
+
+</body>
+
+</html>
