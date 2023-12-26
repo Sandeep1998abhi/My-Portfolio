@@ -16,7 +16,7 @@ body{
     height: 100vh;
     background-image: url(images/back.jpg);
     background-size: cover;
-    background-position: center;
+    background-position: right 23% bottom 45%;
 }
 .container{
     padding: 10px 10%;
@@ -332,8 +332,13 @@ form .btn2{
 nav .fas{
     display: none;
 }
+.work:hover{
+    background:#222;
+    color:white;
+}
 
 /* --------------small screen------------ */
+
 @media  only screen and (max-width:600px){
     #header{
         background-image: url(images/phone-background.png);
